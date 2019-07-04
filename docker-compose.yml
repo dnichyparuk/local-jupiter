@@ -1,0 +1,12 @@
+version: '3'
+services:
+    jupiter-tf-local:
+       image: jupyter/tensorflow-notebook
+       container_name: jupiter-tf-local
+       volumes:
+           - .\work:/home/jovyan/work
+       #restart: always
+       #environment:
+       ports:
+           - 8888:8888
+
